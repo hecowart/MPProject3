@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url({% static 'assets/img/human-trafficking.jpg' %})">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>{{ data.first_name}} {{ data.last_name}}</h1>
+                            <h1 class="subheading">Missing since {{ data.date_Missing}}.</h1>
+                            
+                            <span class="meta">
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+       <body>First Name: {{data.first_name}}</body>
+       <br>
+       <body>Last Name: {{data.last_name}}</body>
+       <br>
+       <body>Age at Missing: {{data.age_At_Missing}}</body>
+       <br>
+       <body>Date Missing: {{data.date_Missing}}</body>
+       <br>
+       <body>City: {{data.city}}</body>
+       <br>
+       <body>State: {{data.state}}</body>
+       <br>
+       <body>Gender: {{data.gender}}</body>
+       <br>
+       <body>Race: {{data.race}}</body>
+
+{%endblock%}

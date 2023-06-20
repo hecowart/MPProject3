@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{%load static%}
+{%block content%}
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url({%static 'assets/img/girls.JPG' %})">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Missing Persons in Utah</h1>
+                            <span class="subheading"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="{% url 'post1' %}">
+                            <h2 class="post-title">What’s being done to help human trafficking survivors in Utah? This recovery center is seeking donations.</h2>
+                            <h3 class="post-subtitle">Although Utah is in the top 10 states for reported human trafficking cases, the state does not have programs to help survivors of trafficking get back on their feet.</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Emily Ashcraft</a>
+                            on October 8, 2021
+                        </p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="{% url 'post2' %}">
+                            <h2 class="post-title">Human Trafficking in Utah: What does it look like?</h2>
+                            <h3 class="post-subtitle">Here are some indicators of suspect trafficking:</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Danielle MacKimm</a>
+                            on April 7, 2022
+                        </p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="{% url 'post3' %}">
+                            <h2 class="post-title">Human trafficking isn’t just a problem elsewhere. It’s happening in urban, rural Utah, new report says.</h2>
+                            <h3 class="post-subtitle">Despite public perceptions that human trafficking is an “international problem,” it is occurring in urban and rural areas of Utah.</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Majorie Cortez</a>
+                            on April 6, 2022
+                        </p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Post preview-->
+                    <div class="post-preview">
+                        <a href="{% url 'post4' %}">
+                            <h2 class="post-title">Utah survivor shares her story escaping sex trafficking.</h2>
+                            <h3 class="post-subtitle">Stacy Symons survived the unthinkable.</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Alex Cabrero</a>
+                            on June 30, 2022
+                        </p>
+                    </div>
+                    <!-- Divider-->
+                    <hr class="my-4" />
+                    <!-- Pager-->
+                   
+                </div>
+            </div>
+        </div>
+
+
+{% endblock %}
